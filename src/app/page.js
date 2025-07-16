@@ -36,6 +36,17 @@ export default function HomePage() {
         You can also check mine: I was born on <strong>September 25, 1996 at 16:58 in Gentofte</strong>.
       </p>
 
+      {/* Pris på astrologi-session */}
+      <div className="bg-indigo-800 bg-opacity-30 p-4 rounded-xl text-center max-w-xl mb-8">
+        <h2 className="text-2xl font-semibold text-indigo-300 mb-2">Astrology Session</h2>
+        <p className="text-md md:text-lg mb-1">
+          A deep reading session (several hours): <strong>1000 DKK</strong>
+        </p>
+        <p className="text-md md:text-lg">
+          Book via <a href="mailto:rubow10@gmail.com" className="underline">rubow10@gmail.com</a> or <a href="tel:21310094" className="underline">21310094</a>
+        </p>
+      </div>
+
       {/* Knapper */}
       <div className="flex flex-col md:flex-row gap-4">
         {/* Instagram */}
@@ -70,10 +81,27 @@ export default function HomePage() {
           <GiStarsStack className="w-5 h-5" />
           Horoscope
         </a>
+  {/* Payment Page */}
+<a
+  href="/pay"
+  className="flex items-center gap-2 px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-full hover:bg-yellow-300 transition"
+>
+  💳 Payment
+</a>
+
+{/* Astrology Page */}
+<a
+  href="/zodiac"
+  className="flex items-center gap-2 px-6 py-3 bg-purple-600 text-white font-semibold rounded-full hover:bg-purple-500 transition"
+>
+  🌌 Astrology Program
+</a>
+
       </div>
     </main>
   );
 }
+
 
 
 
